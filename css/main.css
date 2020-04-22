@@ -1,0 +1,243 @@
+/*#region General*/
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #f2f2f2;
+}
+/*#endregion*/
+
+/*#region Header*/
+header {
+	font-size: 14px;
+	color: #fff;
+	background: linear-gradient( 0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 212, 255, 0) 75% ), url('/img/capa-madmax2.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 90vh;
+}
+
+div.nav-content {
+  max-width: 960px;
+  margin: 0 auto;
+	padding: 0 30px;
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+div.nav-content nav ul {
+	display: flex;
+	list-style: none;
+}
+
+div.nav-content nav ul li {
+	font-weight: bold;
+	padding-right: 50px;
+}
+
+div.user-info {
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+}
+
+div.user-info img {
+	height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 0 15px;
+}
+
+div.header-content {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	height: 75vh;
+}
+
+div.header-content h1 {
+	font-size: 60px;
+	margin: 0;
+}
+
+div.header-content div.main-title {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	max-width: 960px;
+	z-index: 1;
+}
+
+div.header-content div.main-title ul {
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+
+div.header-content div.main-title ul li {
+	padding-right: 10px;
+}
+
+div.header-content div.main-title a {
+	text-decoration: none;
+	color: #fff
+}
+
+div.header-content div.main-title a:hover {
+	color: #e4bb23;
+}
+
+div.header-content div.main-title button {
+	background-color: #e4bb23;
+	border: none;
+	border-radius: 30px;
+	padding: 15px 30px;
+	color: #000000;
+	font-size: 16px;
+	margin: 10px 0;
+	outline: 0;
+}
+
+div.header-content div.main-title p {
+	font-size: 16px;
+}
+
+div.header-content div.main-title p.date {
+	color:#e4bb23;
+}
+/*#endregion*/
+
+section {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+section nav.menu {
+	display: flex;
+	justify-content: center;
+}
+
+section nav.menu ul {
+	width: 100%;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 5px;
+	padding-left: 0;
+	border-bottom: 1px solid #DFDFDF;
+}
+
+section nav.menu ul li {
+	font-weight: bold;
+	font-size: 12px;
+	padding: 5px 20px;
+}
+
+section nav.menu ul li a {
+	text-decoration: none;
+	color: #e4bb23;
+}
+
+section nav.menu ul li a:hover {
+	/*TODO*/
+}
+
+section div.movies ul {
+	max-width: 960px;
+	list-style: none;
+	display: flex;
+	margin: 0 auto;
+	padding: 0;
+	flex-wrap: wrap;
+}
+
+section div.movies ul li {
+	margin: 0 5px 30px;
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 calc(25% - 10px);
+	border-radius: 10px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+	background-color:#fff;
+}
+
+section div.movies ul li:hover {
+	
+}
+
+section div.movies ul li img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px 10px 0px 0px;
+}
+
+section div.movies ul li span.movie-title {
+	color: #000000;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 10px 0 5px 10px;
+}
+
+section div.movies ul li small.movie-genre {
+	color: #e4bb23;
+	font-size: 12px;
+	padding: 5px 0 5px 10px;
+}
+
+section div.movies ul li div.movie-score {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 10px 5px 10px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+section div.movies ul li div.movie-score a {
+	color: #ccc;
+}
+
+section div.movies ul li div.movie-score a:hover {
+	color:#e74c3c;
+}
+
+footer {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+}
+
+footer div.footer-content {
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0 10px;
+}
+
+footer ul {
+	display: flex;
+	list-style: none;
+}
+
+footer ul li {
+	font-size: 28px;
+	padding-right: 55px;
+}
+
+footer ul li:last-child {
+	padding-right: 0;
+}
+
+footer ul li a {
+	color: #ccc;
+}
